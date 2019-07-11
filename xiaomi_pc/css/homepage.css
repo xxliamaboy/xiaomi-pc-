@@ -1,0 +1,626 @@
+/*清除所有外边距和内边距和*/
+*{margin:0;padding:0}
+/*设置盒子模型*/
+*{box-sizing:border-box;}
+/*清除所有a标签修饰样式*/
+a{text-decoration:none;}
+
+/*小米产品大全样式*/
+.product_list{
+	width:1226px;
+	margin:0 auto;
+	position:relative;
+}
+.product_list_top{
+	width:1226px;
+	position:relative;
+	margin-bottom:10px;
+}
+
+/* 轮播图 */
+.product_list_top ul.banner{
+	width:1226px;height:460px;
+	list-style: none;
+	position:relative;
+}
+
+
+.product_list_top>div>ul.banner>.item{
+	width:1226px;height:460px;
+	position:absolute;
+	opacity:0;
+	transition:opacity 1s linear
+}
+
+.product_list_top>div>ul.banner>.item.active{
+	opacity: 1;
+	z-index:10px;
+}
+
+
+.product_list_top>div>ul.banner>.item>a>img{
+	/* width:1226px;height:460px; */
+	width:100%;
+	display:block;
+}
+
+
+#container_banner .right,
+#container_banner .left
+{
+	width:40px;
+	height:70px;
+	background:rgba(66,66,66,0.3);
+	border-radius:5px;
+	display: block;
+	position:absolute;
+	top:195px;
+	right:0px;
+	color:#666;
+	font-size:30px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+
+}
+
+
+#container_banner .left{
+	left:234px;		
+}
+
+#container_banner .right:hover,
+#container_banner .left:hover{
+	background:#666;
+	color:#fff;
+	font-size:35px;
+}
+/*轮播图点按钮 */
+
+#container_banner .pointlist{
+	width:100px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	position:absolute;
+	bottom:20px;
+	left:600px;
+	list-style:none;
+}
+
+#container_banner .pointlist .point{
+	width:10px;
+	height:10px;
+	background: #000;
+	border-radius:50%;
+}
+#container_banner .pointlist .point.active{
+	width:15px;
+	height:15px;
+	background: #fff;
+	border:2px solid #666;
+}
+
+
+/* 侧边导航 */
+.product_list_top .aside_nav{
+	width:234px;height:460px;
+	background:rgba(0,0,0,0.4);
+	list-style:none;
+	position:absolute;
+	top:0px;left:0px;
+}
+
+.product_list_top>.aside_nav>li{
+	padding-left:30px;
+	/* position:relative; */
+	display:flex;
+	justify-content:space-between;
+}
+
+.product_list_top>.aside_nav>li:first-child{
+	margin-top:33px;
+}
+
+.product_list_top .aside_nav>li:hover{
+	background:#ff6700;
+}
+
+.product_list_top>.aside_nav>li>a{
+	width:160px;height:40px;
+	color:#fff;
+	font-size:20px;
+    line-height:40px;
+	
+}
+
+.product_list_top .aside_nav>li:after{
+	content:">";
+	/* position:absolute;
+	top:5px;right:0px; */
+	font-size:18px;
+	color:#fff;
+}
+
+/* 显示隐藏面板*/
+.product_list_top>.aside_nav>li>ul{
+	display: none;
+}
+
+.product_list_top .aside_nav>li:hover>ul{
+	display:block;
+	width:500px;
+	height:460px;
+	background:rgba(255,255,255,0.99);
+	list-style:none;
+	position:absolute;
+	top:0px;left:234px;
+	display:flex;
+	flex-flow:column wrap;
+	box-shadow:0px 5px 5px #b0b0b0;
+}
+
+
+
+.aside_nav>li>ul>li{
+	width:220px;	
+}
+
+.aside_nav>li>ul>li>a{
+	display: block;
+	padding:20px 10px;
+	font-size:10px;	
+}
+
+.aside_nav>li>ul>li>a>img{
+	vertical-align:middle;
+	width:50px;
+}
+
+
+
+/*小米产品大全中部样式*/
+.product_list_middle{
+	width:1226px;
+	margin-bottom:12px;
+	display:flex;
+	justify-content:space-between;
+}
+
+.product_list_middle div{
+	width:300px;height:170px;
+	background:#666;
+}
+.product_list_middle div:first-child ul{
+	display:flex;	
+	list-style:none;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+.product_list_middle div:first-child ul li{
+	width:76px;height:82px;
+	padding-top:20px;
+	text-align:center;
+}
+.product_list_middle div:first-child ul li a p{
+	color:rgba(255,255,255,0.7);
+}
+
+
+.product_list_middle .list_middle_right a img{
+	width:300px;height:170px;
+	
+}
+
+
+/*小米产品大全底部样式*/
+.product_list_bottom{
+	margin-bottom:30px;
+}
+.product_list_bottom a img{
+	width:1226px;height:116px;
+}
+
+/*产品分类*/
+.product_body{
+	background:#f5f5f5;
+}
+
+/*产品分类_小米手机列表*/
+.phone_category{
+	width:1226px;
+	margin:0 auto;
+}
+
+/*产品分类_小米手机列表头*/
+.phone_category_title{
+	line-height:58px;
+	position:relative;
+}
+
+.phone_category_title a{
+	position:absolute;
+	top:0px;right:0px;
+}
+
+/*产品分类_小米手机列侧边*/
+.phone_category_bottom{
+	display:flex;
+}
+
+.phone_category_sidebar a img{
+	width:234px;height:614px;
+}
+
+/*产品分类_小米手机列表右边*/
+.phone_category_right{
+	width:992px;
+}
+.phone_category_right ul{
+	list-style:none;
+}
+.phone_category_right ul li{
+	width:234px;height:300px;
+	margin-bottom:14px;margin-left:14px;
+	background:#fff;
+	float:left;
+}
+
+.phone_category_right ul li .font_top_green{
+	width:64px;height:20px;
+	background:#83c44e;
+	color:#fff;
+	margin:0 auto;
+	text-align:center;
+}
+
+.phone_category_right ul li .font_top_red{
+	width:64px;height:20px;
+	background:#e93539;
+	color:#fff;
+	margin:0 auto;
+	text-align:center;
+}
+
+.phone_category_right a{
+	width:180px;height:180px;
+	display:block;
+	margin:0 auto;
+}
+.phone_category_right ul li a img{
+	width:180px;height:180px;
+}
+
+.phone_category_right ul li .font_bottom_first{
+	margin:1px;
+	text-align:center;
+}
+.phone_category_right ul li .font_bottom_two{
+	margin:5px;
+	color:#666;
+	font-size:2px;
+	text-align:center;
+}
+
+.phone_category_right ul li .font_bottom_three{
+	margin:5px;
+	color:#ff6700;
+	font-size:10px;
+	text-align:center;
+}
+
+/*产品分类_小米手机底部图片*/
+.phone_bottom img{
+	width:1226px;height:120px;
+}
+
+/*产品分类_家电*/
+
+.homeappliances{
+	width:1226px;
+	margin:0 auto;
+}
+
+/*产品分类_家电顶部*/
+
+.homeappliances_title{	
+	line-height:58px;
+	position:relative;
+}
+
+
+.homeappliances_title ul{
+	position:absolute;
+	top:0px;right:0px;
+	list-style:none;
+	display:flex;
+}
+
+
+.homeappliances_title ul li{
+	margin-right:10px;
+}
+
+.homeappliances_title ul li a{
+	color:#000;
+}
+
+.homeappliances_title ul li a:hover{
+	border-bottom:3px solid #ff6700;
+	color:#ff6700;
+}
+
+/*产品分类_家电底部*/
+.homeappliances_product{
+	display:flex;
+}
+
+.homeappliances_product div:first-child div{
+	width:234px;height:300px;
+	margin-bottom:14px;
+	
+}
+.homeappliances_product div:first-child div a img{
+	width:234px;height:300px;
+}
+.homeappliances_product div:nth-child(2) ul{
+	display:flex;
+	flex-wrap:wrap;	
+	list-style:none;
+}
+.homeappliances_product div:nth-child(2) ul li{
+	width:234px;height:300px;
+	margin:0 0 14px 14px;
+	background:#fff;
+}
+
+
+.homeappliances_product div:nth-child(2) ul li .font_top_green{
+	width:64px;height:20px;
+	background:#83c44e;
+	color:#fff;
+	margin:0 auto;
+	text-align:center;
+}
+
+.homeappliances_product div:nth-child(2) ul li .font_top_red{
+	width:64px;height:20px;
+	background:#e93539;
+	color:#fff;
+	margin:0 auto;
+	text-align:center;
+}
+
+.homeappliances_product div:nth-child(2) ul li a{
+	width:180px;height:180px;
+	display:block;
+	margin:0 auto;
+}
+
+.homeappliances_product div:nth-child(2)  ul li a img{
+	width:180px;height:180px;
+}
+
+.homeappliances_product div:nth-child(2)  ul li .font_bottom_first{
+	margin:1px;
+	text-align:center;
+}
+.homeappliances_product div:nth-child(2)  ul li .font_bottom_two{
+	margin:5px;
+	color:#666;
+	font-size:2px;
+	text-align:center;
+}
+
+.homeappliances_product div:nth-child(2)  ul li .font_bottom_three{
+	margin:5px;
+	color:#ff6700;
+	font-size:10px;
+	text-align:center;
+}
+/* 产品分类_家电底部图片 */
+.homeappliances_bottom img{
+	width:1226px;height:120px;
+}
+
+/* 产品分类_智能列表 */
+.intelligence{
+	width:1226px;
+	margin:0 auto;
+}
+
+/*产品分类_智能顶部*/
+
+.intelligence_title{	
+	line-height:58px;
+	position:relative;
+}
+
+
+.intelligence_title ul{
+	position:absolute;
+	top:0px;right:0px;
+	list-style:none;
+	display:flex;
+}
+
+
+.intelligence_title ul li{
+	margin-right:10px;
+}
+
+.intelligence_title ul li a{
+	color:#000;
+}
+
+.intelligence_title ul li a:hover{
+	border-bottom:3px solid #ff6700;
+	color:#ff6700;
+}
+
+/*产品分类_智能底部*/
+.intelligence_product{
+	display:flex;
+}
+
+.intelligence_product div:first-child div{
+	width:234px;height:300px;
+	margin-bottom:14px;
+	
+}
+.intelligence_product div:first-child div a img{
+	width:234px;height:300px;
+}
+.intelligence_product div:nth-child(2) ul{
+	display:flex;
+	flex-wrap:wrap;	
+	list-style:none;
+}
+.intelligence_product div:nth-child(2) ul li{
+	width:234px;height:300px;
+	margin:0 0 14px 14px;
+	background:#fff;
+}
+
+
+.intelligence_product div:nth-child(2) ul li .font_top_green{
+	width:64px;height:20px;
+	background:#83c44e;
+	color:#fff;
+	margin:0 auto;
+	text-align:center;
+}
+
+.intelligence_product div:nth-child(2) ul li .font_top_red{
+	width:64px;height:20px;
+	background:#e93539;
+	color:#fff;
+	margin:0 auto;
+	text-align:center;
+}
+
+.intelligence_product div:nth-child(2) ul li a{
+	width:180px;height:180px;
+	display:block;
+	margin:0 auto;
+}
+
+.intelligence_product div:nth-child(2)  ul li a img{
+	width:180px;height:180px;
+}
+
+.intelligence_product div:nth-child(2)  ul li .font_bottom_first{
+	margin:1px;
+	text-align:center;
+}
+.intelligence_product div:nth-child(2)  ul li .font_bottom_two{
+	margin:5px;
+	color:#666;
+	font-size:2px;
+	text-align:center;
+}
+
+.intelligence_product div:nth-child(2)  ul li .font_bottom_three{
+	margin:5px;
+	color:#ff6700;
+	font-size:10px;
+	text-align:center;
+}
+/* 产品分类_智能底部图片 */
+.intelligence_bottom img{
+	width:1226px;height:120px;
+}
+
+/* 推荐Recommend */
+.recommend{
+	width:1226px;
+	margin:0 auto;
+}
+
+.recommend .recommend_title{
+	line-height: 58px;
+}
+
+.recommend_product ul{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	list-style:none;
+}
+
+.recommend_product ul li{
+	width:234px;height:300px;
+	padding-top:50px;
+	background: #fff;
+	text-align:center;
+}
+.recommend_product ul li .rec_pro_name{
+	display:block;	
+	padding:10px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	color:#000;
+}
+
+.recommend_product ul li .rec_pro_price{
+	padding:5px;
+	color:#ff6700;
+}
+
+/* 内容 */
+.content{
+	width:1226px;
+	margin:0 auto;
+	padding-bottom:20px;
+}
+
+.content h2{
+	line-height:58px;
+}
+
+.content ul{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	list-style:none;
+}
+.content_first{
+	width:296px;
+	height:420px;
+	/* padding:30px 0; */
+	background:#fff;
+	text-align:center;
+}
+
+.content_first .title{
+	padding-top:10px;
+	color:#ffac13;
+	font-size:16px;
+	font-weight:400;
+}
+
+.content_first_name a{
+	color:#333;
+	font-size:20px;
+	font-weight:400;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow: hidden;	
+}
+
+.content_first_desc a{
+	display:block;
+	width:296px;height:56px;
+	padding:10px 12px;
+	color:#b0b0b0;
+	font-size:12px;
+}
+
+.content_first_price a{
+	display:block;
+	width:296px;height:35px;
+	padding-bottom:15px;
+	color:#333;
+	font-size:15px;
+}

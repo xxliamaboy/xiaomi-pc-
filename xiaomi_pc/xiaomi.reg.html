@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reg.css">
+</head>
+<body>
+    <!-- 注册框 -->
+    <div class="reg_frame">
+        <div class="title_logo">
+            <a href="index.html"><img src="./img/reg/xiaomi.jpg" alt=""></a>
+        </div>
+        <h4 class="title_big">注册小米帐号</h4>
+        <!-- 注册用户手机和密码 -->
+        <div class="reg_box">            
+            <h4 class="reg_phone">用户手机号码</h4>
+            <input type="text" placeholder="请出入注册手机号" id="uphone">
+            <p></p>
+            <h4 class="reg_upwd">用户密码</h4>
+            <input type="password" placeholder="请出入注册密码" id="upass">
+            <p id="feedBack"></p>
+            <button class="btn_reg" id="reg">立即注册</button>
+        </div>
+        <!-- 用户协议和 隐私政策 -->
+        <div class="msg">
+            <input type="checkbox" id="user_checkbox" checked><label for="user_checkbox">注册帐号即表示您同意并愿意遵守小米 用户协议和 隐私政策</label>
+        </div>
+    </div>
+    <!--注册页面底部-->
+    <footer class="bottom">
+		<ul>
+			<li><a href="">简体</a></li>
+			<span>|</span>
+			<li><a href="">繁体</a></li>
+			<span>|</span>
+			<li><a href="">English</a></li>
+			<span>|</span>
+			<li><a href="">常见问题</a></li>			
+		</ul>
+		<p>
+		小米公司版权所有-京ICP备10046444- <img src="./img/reg/ghs.png" alt="">京公网安备11010802020134号-京ICP证110507号
+		</p>	
+    </footer>
+    <script src="js/jquery-3.2.1.js"></script>
+	<script src="js/reg.js"></script>
+</body>
+</html>

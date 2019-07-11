@@ -1,0 +1,135 @@
+*{margin:0;padding:0}
+
+/*顶部*/
+header{
+	width:1130px;
+	margin:0 auto;
+}
+
+/* 中部背景图*/
+.middle{
+	width:100%;
+	height:609px;
+	background-image:url(../img/login/01.jpeg);
+	background-position-x: 0%;
+}
+.middle_inside{
+	width:1130px;height:609px;
+	margin:0 auto;
+
+	background-size:1130px 609px;
+	position:relative;
+}
+
+/*登录框*/
+.login_frame{
+	width:300px;height:500px;
+	border-radius:35px;
+	background:#fff;
+	color:#757575;
+	position:absolute;
+	top:67px;left:0px;
+	padding:10px;
+	box-sizing:border-box;
+
+}
+a{text-decoration:none}
+
+.as_login{
+	font-size:25px;
+	text-align:center;
+	line-height:50px;
+}
+.as_login a:first-child{
+	color:#ff6700
+}
+
+.as_login>span{
+    margin:20px;
+}
+.login_frame>input{
+	width:280px;height:50px;
+	margin-top:15px;
+	padding:15px;
+	font-size:15px;
+	outline:none;
+	box-sizing:border-box;
+}
+
+#feedBack{
+	color:red;
+}
+
+.user_login{
+	width:280px;height:50px;
+	margin-top:20px;
+	background:#ff6700;
+	border:1px;
+    outline:1px solid #ff6700;
+	font-size:20px;
+	color:white;
+	text-align:center;
+	line-height:50px;
+	display:block;
+
+}
+.phone_login{
+	width:280px;height:50px;
+	font-size:10px;
+	position:relative;
+}
+.phone_login>a{
+	float:left;
+	color:#ff6700;
+}
+.phone_login>p{
+	float:right;
+}
+
+/*登录框底部登录方式*/
+.login_frame_bottom{
+	margin-top:90px;
+}
+
+.login_frame_bottom fieldset{
+	border:0;
+	border-top:1px solid #e0e0e0;
+	color:#e0e0e0;
+	text-align:center;
+}
+
+.login_frame_bottom div{
+	margin-top:10px;
+	text-align:center;
+	display:flex;
+	justify-content:space-around;
+}
+
+/*登录页面底部*/
+.bottom{
+	width:1130px;
+	margin:0 auto;
+	padding-top:70px;
+}
+.bottom ul{
+	display:flex;
+	justify-content:center;
+	list-style:none;
+}
+
+.bottom ul span{
+	margin:0 15px;
+}
+
+.bottom ul li a{
+	color:#000;
+}
+
+.bottom ul li a:hover{
+	color:#ff6700;
+}
+
+.bottom p{
+	padding-top:20px;
+	text-align:center;
+}

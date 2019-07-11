@@ -1,0 +1,113 @@
+/*清除所有外边距和内边距和*/
+*{margin:0;padding:0}
+/*设置盒子模型*/
+*{box-sizing:border-box;}
+/*清除所有a标签修饰样式*/
+a{text-decoration:none;}
+
+/*顶部样式*/
+.hearder{
+	height:30px;
+	background:#333;
+	line-height:30px;
+}
+.hearder_child{
+	width:1226px;
+	margin:0 auto;
+}
+
+.hearder_child:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.hearder_child ul{
+	list-style:none;
+	display:flex;
+	
+}
+
+.hearder_child_left{
+   float:left;
+}
+.hearder_child_right{
+   float:right;
+}
+
+.hearder_child span{
+	margin:0 3px;
+	color:#424242;
+}
+.hearder_child a{
+	color:#b0b0b0;
+}
+
+.hearder_child a:hover{
+	color:#fff;
+}
+
+
+/*小米产品主要列表*/
+/*主要内容样式 */
+.main_content{
+	width:1226px;
+	height:100px;
+	margin:0 auto;
+	position:relative;
+}
+.main_content_left img{
+	width:55px;height:55px;
+	display:block;
+	position:absolute;
+	top:22.5px;
+	
+}
+.main_content ul{
+	display:flex;
+	list-style:none;
+	position:absolute;
+	top:46px;left:203px;
+}
+
+.main_content ul li{
+	font-size:20px;
+	margin:0px 10px;
+}
+
+
+.main_content_right div{
+	width:250px;
+	border:1px solid #b0b0b0;
+	border-radius:50px;
+	overflow:hidden;
+	display:flex;
+	position:absolute;
+	top:33.5px;right:0px;
+	
+}
+
+.main_content_right div input{
+	width:200px;
+	height:45px;
+	padding:20px;
+	border:none;
+	outline:none;
+	
+}
+
+.main_content_right div a{
+	width:50px;
+	background: #b0b0b0;
+	display:block;
+	font-size:25px;
+	color:#fff;	
+	text-align:center;
+	
+}
+
+.main_content_right div:hover,
+.main_content_right div:hover a{
+	border: 1px solid #ff6700;
+	background:#ff6700;
+}

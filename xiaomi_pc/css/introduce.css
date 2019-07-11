@@ -1,0 +1,442 @@
+/*清除所有外边距和内边距和*/
+*{margin:0;padding:0}
+/*设置盒子模型*/
+*{box-sizing:border-box;}
+/*清除所有a标签修饰样式*/
+a{text-decoration:none;}
+
+/* 导航 */
+.nav_bar_box{
+	height:72px; 
+    border:1px solid #b0b0b0;
+}
+.nav_bar{
+	/* border:1px solid #b0b0b0; */
+	height:0px;
+    z-index:10; 
+	transition:all 0.5s linear;
+		
+}
+
+.nav_container{
+    width:1226px;
+    height:70px;
+    line-height:70px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+.nav_container .proName ul{
+    display:flex;
+    list-style:none;
+}
+.nav_container .right ul{
+	display:flex;
+	align-items: center;
+    list-style:none;
+}
+.nav_container .right ul li .btn{
+	display:block;
+	margin-left:10px;
+	width:100px;
+	height:36px;
+	background:#ff6700;
+	outline:none;
+	border:none; 
+	color:#fff;
+}
+
+/* 产品介绍内容 */
+
+/*顶部轮播图展示*/
+.Rot_top{
+	position:relative;	
+}
+
+.Rot_top .mi9_pic li img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.Rot_top .mi9_txt{	
+	width:100%;
+	position: absolute;
+	padding-top:50px;
+	top:0px;
+	text-align:center;
+	
+}
+
+.Rot_top .mi9_txt>h2{
+	color:#fff;
+	font-size:30px;
+}
+.Rot_top .mi9_txt>p{
+	color:#fff;
+	font-size:75px;
+	font-family:"F4af82"
+}
+
+.Rot_top .mi9_txt>div{
+	color:#ecb41f;
+	font-size:20px;
+}
+
+.Rot_top .mi9_txt>div>span:first-child{
+	font-size:10px;
+	vertical-align: top;
+}
+
+.Rot_top .mi9_txt>div>span:last-child{
+	font-size:10px;
+	vertical-align: bottom;
+}
+
+/* 参数描述 */
+.par_desc{
+	padding-top:50px;
+	padding-bottom:30px;
+	background:#ffffff;
+}
+
+.par_desc ul{
+	margin:0 auto;
+	width:877px;
+	display:flex;	
+	justify-content:space-between;
+	flex-wrap:wrap;
+	list-style:none;
+}
+
+.par_desc ul li{
+	width:175px;
+	padding-bottom:20px;
+}
+
+.par_desc ul li h5{
+	font-size:13px;
+}
+.par_desc ul li p{
+	color:#848484;
+	font-size:12px;
+}
+
+/* cpu介绍 */
+.cpu_inr{
+	position:relative;
+}
+.cpu_inr img{
+	width:100%;
+	height:500px;
+}
+
+.cpu_inr .cpu_desc{
+	width:950px;
+	height:300px;
+	margin:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.cpu_desc h2{
+	color:#fff;
+	font-size:50px;
+}
+
+.cpu_desc h2:nth-child(2){
+	padding:50px 0px;
+}
+
+/*处理器section1 */
+.cpu_sec1{
+	padding-top:50px;
+}
+.cpu_sec1 .sec1_content{
+	margin:0 auto;
+	width:950px;
+}
+
+.sec1_content h2{
+	padding-bottom:20px;
+	line-height:50px;
+	color: #333333;
+	font-size:35px;
+}
+
+.sec1_content p{
+	padding-bottom:20px;
+	color: #333333;
+	font-size:15px;
+}
+
+.sec1_content img{
+	width:950px;
+}
+
+/* 处理器section2 */
+
+.cpu_sec2{
+	padding-top:50px;
+}
+.cpu_sec2 .sec2_content{
+	margin:0 auto;
+	width:950px;
+}
+
+.sec2_content .con_dec1{
+	padding-bottom:20px;
+	color: #333333;
+	font-size:35px;
+	line-height:50px;
+}
+
+.sec2_content .con_dec2{
+	color: #333333;
+	font-size:18px;
+	
+}
+
+.sec2_content .turbo{
+	display:flex;
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+.turbo div{
+	width:250px;
+	height:120px;
+	padding:25px;
+	border:1px solid #b2b2b2;
+	text-align:center;
+} 
+
+.turbo .fir{
+	margin-right:30px;
+}
+
+.turbo div p{	
+	color:#6e6e6e;
+	font-size:14px;
+}
+
+.sec2_content .explain{
+	font-size:10px;
+	color:rgba(141,141,141,0.7);
+}
+
+.sec2_content .picture img{
+	width: 100%;
+	vertical-align:middle;
+}
+
+/* 快充Quickcharge,section3 */
+.qui_sec3{
+	background:#ebebeb;
+}
+
+.qui_sec3 .sec3_content{
+	width: 950px;
+	margin:0 auto;
+	padding-top:60px;
+}
+
+.sec3_content .noline{
+	color:#333333;
+	font-size:35px;
+}
+
+.sec3_content .speed{
+	color:#333333;
+	font-size:18px;
+}
+.sec3_content .explain{
+	color:rgba(141,141,141,0.7);
+	font-size:10px;
+}
+
+.sec3_content .picture img,
+.sec3_content .picture2 img{
+	width:100%;
+	vertical-align: middle;
+}
+
+.sec3_content .picture3 img{
+	width:70%;
+	display:block;
+	margin:0 auto;
+}
+
+.sec3_content p:last-child{
+	padding:20px 0;
+	color:rgba(141,141,141,0.7);
+	font-size:10px;
+	text-align:center;
+
+}
+
+/* 相机camera,section4 */
+.cam_sec4{
+	height:500px;
+	background: url("../img/introduce/camera.jpg") no-repeat;
+}
+
+.cam_sec4 h2{
+	margin:0 auto;
+	padding-top:120px;
+	width:950px;
+	color:#fff;
+	font-size:50px;
+	line-height:105px;
+}
+/* 相机camera,section5 */
+.cam_sec5 .sec5_content{
+	margin:0 auto;
+	padding-top:50px;
+	width:950px;
+}
+
+.sec5_content .sensor{
+	padding-bottom:20px;
+	color:#333333;
+	font-size:35px;
+}
+
+.sec5_content .explain{
+	padding-bottom:20px;
+	color:#333333;
+	font-size:18px;
+}
+
+.sec5_content .video video{
+	padding-bottom:10px;
+	color:#333333;
+	width:600px;
+}
+
+.sec5_content .mark{
+	color:rgba(141,141,141,0.7);
+	font-size:12px;
+}
+
+/* 相机camera,section6 */
+
+.cam_sec6 .sec6_content{
+	margin:0 auto;
+	padding-top:50px;
+	width:950px;
+}
+
+.sec6_content .explain1{
+	padding-bottom:20px;
+	color:#333333;
+	font-size:35px;
+}
+
+.sec6_content .explain2{
+	padding-bottom:20px;
+	color:#333333;
+	font-size:18px;
+}
+
+.sec6_content .explain3{
+	padding-bottom:20px;
+	color:#333333;
+	font-size:20px;
+}
+
+.sec6_content .video  video{
+	padding-bottom:10px;
+	color:#333333;
+	width:600px;
+}
+
+.sec6_content .btns{
+	width:600px;
+	display:flex;
+	justify-content:center;
+}
+
+.sec6_content .btns .btn{
+	margin:0 10px;
+	padding:8px 10px;
+	display:inline-block;
+	border:1px solid #00a0e9;
+	color:#00a0e9;
+}
+
+/* 相机camera,section7 */
+
+.cam_sec7 .sec7_content{
+	margin:0 auto;
+	padding-top:50px;
+	width:950px;
+}
+
+.sec7_content .explain1{
+	padding-bottom:20px;
+	color:#333333;
+	font-size:35px;
+}
+
+.sec7_content .explain2{
+	padding-bottom:20px;
+	color:#333333;
+	font-size:18px;
+}
+
+.sec7_content .mark{
+	padding-bottom:20px;
+	color:rgba(141,141,141,0.7);
+	font-size:12px;
+}
+
+.sec7_content .picture img{
+	width:100%;
+    vertical-align: middle;
+}
+
+/* 相机camera,section8  */
+.btoom_sec8{
+	margin-top:50px;
+	position:relative;
+}
+.btoom_sec8 .picture img{
+	width:100%;
+	vertical-align:middle;
+}
+
+.btoom_sec8 .sec8_content{	
+	position: absolute;
+	text-align:center;
+	width: 100%;
+	top:30px;
+	/* left:610px; */
+}
+
+.sec8_content h2{
+	color:#fff;
+	font-size:30px;
+}
+
+.sec8_content p{
+	color:#fff;
+	font-size:75px;
+	font-family:"F4af82"
+}
+
+/* 跳转页面全参数parameter */
+.full_par{
+	height:100px;
+	background: url("../img/introduce/bottom.jpg") no-repeat;
+}
+.full_par .btn{
+	margin:0 auto;
+	width:102px;
+	display:block;
+	line-height:100px;
+	color:#fff;
+	font-size:20px;
+}

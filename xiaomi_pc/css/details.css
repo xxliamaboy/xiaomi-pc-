@@ -1,0 +1,455 @@
+/*清除所有外边距和内边距和*/
+*{margin:0;padding:0}
+/*设置盒子模型*/
+*{box-sizing:border-box;}
+/*清除所有a标签修饰样式*/
+a{text-decoration:none;}
+
+
+@keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -3000px, 0);
+      transform: translate3d(0, -5000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 25px, 0);
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+/* 导航信息 */
+.nav_bar_box{
+	height:72px; 
+    border:1px solid #b0b0b0;
+    box-shadow:0px 5px 5px #b0b0b0;
+}
+.nav_bar{
+	height:0px;
+    z-index:10;
+    box-shadow:0px 5px 5px #b0b0b0;
+	transition:all 0.5s linear;
+		
+}
+
+.nav_container{
+    width:1226px;
+    height:70px;
+    line-height:70px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+.nav_container .proName ul{
+    display:flex;
+    list-style:none;
+}
+.nav_container .right ul{
+    display:flex;
+    list-style:none;
+}
+
+
+/* 产品内容 */
+.pro_choose_main{
+    width:1226px;
+    display:flex;
+    margin:0 auto;
+    padding:30px 0px;
+}
+.pro_picture{
+    width:600px;
+}
+.pro_picture img{
+    width:560px;
+    height:560px;
+    vertical-align:bottom;
+}
+
+/* 产品内容左边 */
+.pro_info{
+    width:626px;
+}
+
+.pro_info .name{
+  font:24px normal; 
+}
+
+.pro_info .specs{
+    color:#b0b0b0;
+    font-size:14px;
+}
+
+.pro_info .self{
+    font-size:14px;
+    color:#ff6700;
+}
+
+.pro_info .price{
+    color:#ff6700;
+    font-size:18px;
+}
+
+.pro_info .pro_gift{
+    display:flex;
+    padding:10px 0;
+    border-top:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+}
+.pro_info .pro_gift p:first-child{
+    width:80px;height:25px;
+    background:#ff6700;
+    color:#fff;
+    font-size:14px;
+    line-height:25px;
+    text-align:center;
+}
+
+.pro_info .pro_gift p:last-child{
+    margin-left:10px;
+    line-height:25px;
+    font-size:14px;
+}
+
+/* 用户地址 */
+.user_addr{
+    height:105px;
+    background:#fafafa;
+    padding:24px 45px;
+    border:1px solid #e0e0e0;
+}
+
+.user_addr ul{
+    display:flex;   
+    list-style:none;
+}
+
+.user_addr ul li{
+    margin-right:12px;
+    font-size:15px;
+}
+
+.user_addr p{
+    margin-top:5px;
+    color:#ff6700;
+    font-size:15px;
+}
+
+/* 用户地址弹出框 */
+.user_addr .addrEF{
+    width:100%;
+    height:100%;
+    background:rgba(66,66,66,0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+    opacity:1;    
+    transition:opacity 0.2s linear;
+
+}
+.user_addr .addrEF.hide{
+    /* display:none; */
+    height:0%;
+    opacity:0;
+    
+    
+}
+
+.user_addr .addrEF .addrModify{
+    width:500px;
+    height:100px;
+    background:#fff;
+    /* opacity: 0;
+    transition:opacity 3s linear; */
+/*    animation:zoomInDown 3s linear; */
+	animation:bounceInDown 3s linear; 
+    
+}
+
+
+
+
+/* 产品版本 */
+.list-wrap{
+    margin-top:20px;
+    
+}
+/* 一级选择模块 */
+.list-wrap .pro-choose .Sel_template{
+    font-size:20px;
+}
+
+/* 一级选择模块和二级模板二级选择模块共用部分*/
+.list-wrap .pro-choose ul,
+.list-wrap .pro_color ul
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    list-style:none;   
+} 
+
+/* 一级选择模块和二级模板二级选择模块共用部分*/
+.list-wrap .pro-choose ul li,
+.list-wrap .pro_color ul li
+{
+    margin-top:10px;
+    width:310px;
+    height:42px;
+    line-height:42px;
+    border:1px solid #e0e0e0;
+    text-align:center;
+    
+}
+/*
+.list-wrap .pro-choose ul li.active{
+    border:1px solid #ff6700;
+}
+*/
+.list-wrap .pro-choose ul li.active{
+    border:1px solid #ff6700;
+}
+
+
+.list-wrap .pro-choose ul li a{
+    display:block;
+}
+
+.pro-choose ul li a span:first-child{
+    margin:0 60px;
+}
+
+/* 二级选择模块 */
+.list-wrap .pro_color{
+    margin-top:20px;
+}
+
+.list-wrap .pro_color .sel_color{
+    font-size:20px;
+}
+
+.list-wrap .pro_color ul li:first-child{
+    background:url(../img/details/pro_color01.jpg) no-repeat 85px 14px;
+    
+}
+
+.list-wrap .pro_color ul li:nth-child(2){
+    background:url(../img/details/pro_color02.jpg) no-repeat 85px 14px;
+}
+
+.list-wrap .pro_color ul li:last-child{
+    background:url(../img/details/pro_color03.jpg) no-repeat 85px 14px;
+}
+.list-wrap .pro_color ul li:first-child,
+.list-wrap .pro_color ul li:nth-child(2),
+.list-wrap .pro_color ul li:last-child{
+    background-size:15px 15px;
+}
+
+.list-wrap .pro_color ul li a{
+    display:block;
+}
+
+/* 产品保护 */
+/* 产品延长extend保修Guarante */
+.list-wrap .pro_protection{
+    margin:20px 0px;
+}
+
+.list-wrap .pro_protection .protection_title,
+.list-wrap .pro_Guarante .Guarante_title{
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+
+.list-wrap .pro_protection .acc_content,
+.list-wrap .pro_protection .bro_content,
+.list-wrap .pro_Guarante .ext_content
+{
+    display:flex;
+    padding:25px 0px;
+}
+
+.acc_content,.bro_content,.ext_content{
+    border:1px solid #e0e0e0;
+}
+
+.acc_content.active,.bro_content.active,.ext_content.active{
+    border:1px solid #ff6700;
+}
+
+
+
+
+.bro_content{
+    border-top:none;
+}
+
+.acc_content .acc_select,
+.bro_content .bro_select,
+.ext_content .ext_select{
+    margin-top:20px;
+    margin-left:30px;
+    
+}
+
+/* 6个icon-ziyua选择 */
+.acc_content .icon-ziyuan,
+.bro_content .icon-ziyuan,
+.ext_content .icon-ziyuan{
+    border:0.5px solid #e0e0e0;
+    border-radius:50%;
+    color:#fff;
+}
+
+
+.p_icon{
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.ser_term{
+    color:#b0b0b0;
+    font-size:12px;
+}
+.acc_content .acc_list label a,
+.bro_content .bro_list label a,
+.ext_content .ext_list label a
+{
+    color:#ff6700;
+}
+
+.acc_content .acc_list>span:last-child,
+.bro_content .bro_list>span:last-child,
+.ext_content .ext_list>span:last-child
+{
+    margin-left:200px;
+}
+
+
+
+/* 已选择的产品 */
+.pro_info .pro_list{
+    margin:20px 0;
+    padding:20px 20px;
+    background:#f9f9fa;
+}
+
+.pro_list ul{
+  list-style: none;
+}
+
+.pro_list ul>li:not(:nth-child(4)){
+    display:flex;
+    justify-content:space-between; 
+}
+
+.pro_list ul li:last-child{
+    padding:20px 0;
+    color:#ff6700;
+    font:25px bold;
+}
+
+
+/* 购买按钮 */
+.pro_info .btn_purchase{
+    padding:20px 0;
+}
+.btn_purchase ul{
+    display:flex;
+    list-style:none;
+}
+
+.btn_purchase>ul>li>.j_pur{
+    display:block;
+    width:300px;
+    height:54px;
+    line-height:54px;
+    background:#ff6700;
+    text-align:center;
+    color:#fff;
+}
+
+.btn_purchase>ul>li>.j_pur:hover{
+    background:#f25807;
+}
+
+.btn_purchase>ul>li>.like{
+    display:block;
+    margin-left:20px;
+    width:142px;
+    height:54px;
+    line-height:54px;
+    background:#b0b0b0;
+    text-align:center;
+    color:#fff;
+}
+.btn_purchase>ul>li>.like:hover{
+    background:#757575;
+}
+
+/* 产品政策 */
+.pro_info .pro-policy ul{
+    display:flex;
+    list-style:none;
+}
+
+.pro-policy ul li{
+    margin-right:20px;
+    color:#b0b0b0;
+    font-size:14px;
+}
+
+.pro-policy ul li img{
+    vertical-align:middle;
+}
+
+/* 价格说明部分 */
+.section{
+    padding-bottom:69px;
+    background:#f5f5f5;
+
+}
+.section .sec_content{
+    margin:0 auto;
+    width:1226px;
+}
+
+.sec_content h3{
+    padding:20px 0;
+    font-size:22px;
+}
